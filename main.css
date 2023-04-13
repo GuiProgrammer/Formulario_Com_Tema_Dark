@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    text-decoration: none;
+    color: unset;
+}
+body{
+    min-height: 100vh;
+    background: #3e4eff;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 300px;
+    height: 500px;
+    width: 100%;
+    background: #fff;
+    padding: .8rem 2rem;
+    transition:  .5s ease-out;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+.header .title{
+    color: rgb(66, 66, 66);
+}
+.header i{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 20px;
+}
+.socials i{
+    font-size: 1.3rem;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+.camp_input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.camp_input label{
+    font-size: .85rem;
+    padding: 10px 0;
+    font-weight: lighter;
+    color: rgba(0,0,0,.5);
+}
+.camp_input .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #3e4eff;
+    padding-bottom: 3px;
+}
+.input input{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+.camp_input:last-child{
+    margin-bottom: 0;
+    padding: 0;
+}
+.forgot_password{
+    margin-top: 10px;
+    font-size: .85rem;
+    color: rgba(0,0,0,.5);
+}
+.forgot_password:hover{
+    text-decoration: underline;
+}
+.container button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #3e4eff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.container.dark{
+    background: #000;
+    color: #fff;
+}
+.container.dark .socials i{
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+.container.dark .title{
+    color: #fff;
+}
+.container.dark .input{
+    border-bottom: 2px solid #fff;
+}
+.container.dark .camp_input label{
+    color: rgba(255,255,255,.5);
+}
+.container.dark .forgot_password{
+    color: rgba(255,255,255,.5);
+}
+.container.dark button{
+    background: gray;
+}
